@@ -60,3 +60,15 @@ function proximaImg(){
 
     document.getElementById('radio'+cont).checked = true
 }
+
+const button = document.querySelectorAll("btn-produto")
+const modal = document.querySelectorAll("dialog")
+const buttonClose = document.querySelector("dialogbutton")
+
+button.onclick = function (){
+    modal.show()
+}
+
+buttonClose.onclick = function (){
+    modal.close()
+}

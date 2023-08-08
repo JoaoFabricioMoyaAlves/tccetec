@@ -361,7 +361,7 @@ section.slider{
 
 .search-box{
     position: fixed;
-    top: 10%;
+    top: 8%;
     left: 65%;
     transform: translate(-50%, -50%);
     background: rgba(88, 86, 86, 0.87) ;
@@ -407,7 +407,7 @@ section.slider{
 .space-top{
     width: 100%;
     height: 100px;
-    background-color: black;
+    background-color: rgba(5, 5, 5, 0.904);
     position: absolute;
 }
 
@@ -423,7 +423,7 @@ section.slider{
 }
 
 main{
-    background-color: rgba(12, 12, 17, 0.863);
+    background-color: rgb(7, 7, 7);
 }
 
 .produtos-geral{
@@ -703,3 +703,179 @@ main{
     font-size: 300px;
     padding-left: 200px;
 }
+
+.button-produto{
+    background-color: transparent;
+    border: none;
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 255, 0.541);
+}
+
+.pag-produto{
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.pag-produto img{
+    width: 500px;
+    height: 500px;
+}
+
+
+.lyt-produto .nome-produto{
+    color: white;
+    font-size: 40px;
+}
+
+.lyt-produto .valor-produto{
+    color: rgb(32, 248, 25);
+    font-size: 30px;
+}
+
+
+
+
+.lyt-produto button{
+    width: 250px;
+    height: 60px;
+    font-size: 23px;
+    border-radius: 15px;
+    transition: .7s;
+    margin-top:30px;
+    margin-left: 50px;
+    
+}
+.lyt-produto button:hover{
+  background-color: rgb(53, 252, 27);
+  color: white;
+  font-size: 25px;
+  
+}
+
+.descricao p{
+    margin-top: 10px;
+    display: flex;
+    color: #ffffff;
+    width: 300px;
+    height: 280px;
+    font-size: 17px;
+    overflow: scroll;
+}
+
+.barralat{
+    width: 4px; 
+  background-color: #007bff; 
+  margin-right: 10px;
+}
+
+.car-space{
+    height: none;
+}
+
+.carrinho-ender{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(51, 51, 51);
+    font-family: 'Poppins', sans-serif;  
+}
+.space-produto-carrinho{
+    padding-top: 100px;
+    height: 20px;
+}
+.produto-carrinho{
+     padding-top: 15px;
+     padding-left: 10px;
+    height: 120px;
+    background-color: rgba(24, 24, 24, 0.856);
+    display: flex;
+}
+
+.produto-carrinho img{
+    height: 90px;
+    width: 110px;
+    padding-left: 10px;
+}
+
+.prdotuo-carrinho-nome-valor{
+    padding-left: 25px;
+}
+
+.prdotuo-carrinho-nome-valor h2{
+    color: rgba(224, 224, 224, 0.925);
+}
+
+.prdotuo-carrinho-nome-valor p{
+    color: rgb(156, 240, 31);
+}
+
+.produto-carrinho button{
+    text-align: center;
+    font-size: 50px;
+    margin-left: 65%;
+    margin-top: 15px;
+    height: 50px;
+    width: 50px;
+    color: red;
+    background-color: transparent;
+    border: none;
+}
+
+.carrinho-rodape{
+    width: 100%;
+    height: 120px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.63);
+    top: 86%;
+    position: fixed;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-left: 5%;
+}
+
+.car-endereco{
+font-style: none;
+padding-top: 5px;
+overflow: hidden;
+font-size: 16px;
+}
+.valor-frete{
+padding-left: 60%;
+padding-top: 10px;
+
+}
+
+.valor-frete h2{
+    color: rgba(255, 255, 255, 0.904);
+}
+
+.valor-frete p{
+    color: rgb(156, 240, 31);
+}
+
+.valor-frete > .p2{
+    color: rgb(240, 31, 240);
+}
+
+.carrinho-rodape button{
+ height: 75px;
+ width: 350px;
+ margin: auto;
+ border-radius: 35px;
+ font-size: 30px;
+ transition:  1.5s;
+}
+
+.carrinho-rodape button:hover{
+   background-color:  rgb(156, 240, 31);
+    border-radius: 20px;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.801);
+
+   }
