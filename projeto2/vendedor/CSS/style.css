@@ -502,6 +502,7 @@ main{
     margin: auto;
     background-color: rgb(51, 51, 51);
     font-family: 'Poppins', sans-serif;  
+    padding-top: 5px;
     
 }
 
@@ -749,22 +750,7 @@ dialog::backdrop{
 
 
 
-.lyt-produto button{
-    width: 250px;
-    height: 60px;
-    font-size: 23px;
-    border-radius: 15px;
-    transition: .7s;
-    margin-top:30px;
-    margin-left: 50px;
-    
-}
-.lyt-produto button:hover{
-  background-color: rgb(53, 252, 27);
-  color: white;
-  font-size: 25px;
-  
-}
+
 
 .descricao p{
     margin-top: 10px;
@@ -823,17 +809,6 @@ dialog::backdrop{
     color: rgb(156, 240, 31);
 }
 
-.produto-carrinho button{
-    text-align: center;
-    font-size: 50px;
-    margin-left: 65%;
-    margin-top: 15px;
-    height: 50px;
-    width: 50px;
-    color: red;
-    background-color: transparent;
-    border: none;
-}
 
 .carrinho-rodape{
     width: 100%;
@@ -938,10 +913,12 @@ padding-top: 10px;
     background-color: rgb(255, 255, 255);
     display: flex;
     width: 1480px;
+    
     margin: auto;
     border-radius: 6px;
     box-shadow: 2px 2px 5px black;
-    transition: 3s;
+    transform: 2s;
+    
     
 }
 
@@ -973,12 +950,122 @@ padding-top: 10px;
     margin-left: 520px;
 }
 
-.notifc :hover{
-    background-color: rgb(255, 255, 255);
+.addproduto{
+    height: 60px;
+    width: 600px;
     display: flex;
-    width: 1480px;
-    height: 150px;
-    transition: 2s;
-  
+    
+    
+}
+
+
+.carrinho-rodape2{
+    width: 100%;
+    height: 130px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.63);
+    top: 86%;
+    position: fixed;
+    color: white;
+    display: grid;
+    
+   
+}
+
+.carrinho-rodape2 button{
+    height: 75px;
+    width: 600px;
+    margin: auto;
+    border-radius: 35px;
+    font-size: 30px;
+    transition:  1.5s;
+   }
+   
+   .carrinho-rodape2 button:hover{
+      background-color:  rgb(156, 240, 31);
+       border-radius: 20px;
+       font-size: 35px;
+       color: rgba(0, 0, 0, 0.801);
+   
+      }
+
+      .carrinho-rodape2 button > i{
+       font-size: 30px;
+       }
+
+.edit-produto{
+        text-align: center;
+        font-size: 50px;
+        margin-left: 62%;
+        margin-top: 15px;
+        height: 50px;
+        width: 50px;
+        color: rgb(212, 255, 22);
+        background-color: transparent;
+        border: none;
+}
+
+.excluir-produto{
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    margin-top: 15px;
+    margin-left: 1.5%;
+    color: rgb(189, 12, 12);
+}
+
+
+
+
+.nome-produtoadd{
+ margin-left: 15%;
+ width: 400px;
+ height: 55px;
+ font-size: 30px;
+ outline: none;
+}
+
+.valor-produtoadd{
+    margin-top: 15px;
+    margin-left: 15%;
+    height: 55px;
+    font-size: 30px;
+    width: 200px;
+    color: rgb(30, 172, 11);
+    outline: none;
+}
+
+.descricaop{
+    margin-top: 15px;
+    margin-left: 15%; 
+    height: 250px;
+    width: 400px;
+    font-size: 20px;
+    outline: none;
+}
+
+.btnprodutoadd {
+    width: 250px;
+    height: 60px;
+    font-size: 23px;
+    border-radius: 20px;
+    transition: .7s;
+    margin-top:30px;
+    margin-left: 160px;
+    
+}
+.btnprodutoadd:hover{
+  background-color: rgb(53, 252, 27);
+  color: rgb(66, 66, 66);
+  font-size: 25px;
+  border-radius: 15px;
+}
+
+.lyt-form{
+        display: flex;
+        justify-content: space-around;
+    
     
 }

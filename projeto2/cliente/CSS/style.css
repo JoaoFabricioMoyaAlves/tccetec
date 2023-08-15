@@ -746,7 +746,7 @@ dialog::backdrop{
     border-radius: 15px;
     transition: .7s;
     margin-top:30px;
-    margin-left: 50px;
+    margin-left: 45px;
     
 }
 .lyt-produto button:hover{
@@ -756,14 +756,16 @@ dialog::backdrop{
   
 }
 
+
+
 .descricao p{
     margin-top: 10px;
     display: flex;
     color: #ffffff;
-    width: 300px;
+    width: 400px;
     height: 280px;
     font-size: 17px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .barralat{
