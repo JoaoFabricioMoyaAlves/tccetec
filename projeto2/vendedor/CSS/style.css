@@ -1038,6 +1038,7 @@ padding-top: 10px;
 }
 
 .descricaop{
+    display: none;
     margin-top: 15px;
     margin-left: 15%; 
     height: 250px;
@@ -1066,6 +1067,56 @@ padding-top: 10px;
 .lyt-form{
         display: flex;
         justify-content: space-around;
-    
-    
+}
+
+#picture__input {
+    display: none;
+  }
+  
+  .picture {
+    width: 500px;
+    aspect-ratio: 16/9;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    border: 3px solid black;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    outline: none;
+    overflow: hidden;
+  }
+  
+  .picture:hover {
+    color: #777;
+    background: #ccc;
+  }
+  
+  .picture:active {
+    border-color: turquoise;
+    color: turquoise;
+    background: #eee;
+  }
+  
+  .picture:focus {
+    color: #777;
+    background: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .picture__img {
+    max-width: 100%;
+  }
+  
+.txtareaadd{
+    margin-top: 15px;
+    margin-left: 15%; 
+    min-height: 250px;
+    min-width: 400px;
+    max-height: 250px;
+    max-width: 400px;
+    font-size: 20px;
+    outline: none;
 }

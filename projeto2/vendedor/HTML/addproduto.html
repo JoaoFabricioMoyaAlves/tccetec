@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../CSS/style.css">
    <script src="../JS/script.JS" defer></script> 
+   <script src="../JS/p.js" defer></script> 
 </head>
 <body>
  
@@ -100,15 +101,23 @@
 <div class="formulario-ender">
 <div class="pag-produto">
     <form action="#" method="post" class="lyt-form">
+ 
+        <label class="picture" for="picture__input" tabIndex="0">
+            <span class="picture__image"></span>
+          </label>
+          
+          <input type="file" name="picture__input" id="picture__input">
 
-<img src="../MD/produto1.png" alt="produto1"  class="img-produto">
+<!-- <img src="../MD/produto1.png" alt="produto1"  class="img-produto"> -->
 <div class="lyt-produto">
  <input type="text" name="nomep" id="nomep" class="nome-produtoadd" placeholder="Nome Produto">
  <input type="number" name="valorp" id="valorp" class="valor-produtoadd" placeholder="Valor R$">
 
 
  <div class="descricao">
+    
  <input type="text" name="descricaop" id="descricaop" class="descricaop" placeholder="Descrição">
+ <textarea name="descricaotxt" for="descricaop" class="txtareaadd" id="descricaotxt" cols="30" rows="10" placeholder="Descrição"></textarea>
 
  </div>
  <button class="btnprodutoadd">Adicionar <i class="bi bi-plus-circle-fill"></i></button>
