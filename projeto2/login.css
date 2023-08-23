@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: black;
+}
+.ct-principal{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    display: flex;
+    width: 1000px;
+    height: 750px;
+    padding-left:0px ;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.514);
+}
+
+.form-login{
+    padding-left: 55px;
+}
+
+.titulo{
+    margin-top: 50px;
+}
+
+.titulo h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+strong{
+    font-size: 55px;
+}
+
+.subtitulo{
+    color: rgba(63, 60, 60, 0.863);
+ margin-top: 25px;
+ font-size: 12px;
+}
+
+.subtitulo h2{
+    margin: 0px;
+    padding: 0px;
+}
+
+.form{
+    margin-top: 120px;
+    
+}
+
+.form label{
+    font-size: 20px;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.form input{
+    outline: none;
+    display: block;
+    width: 350px;
+    height: 40px;
+   border-radius: 0px;
+   background-color: rgba(165, 164, 164, 0.322);
+   border: none;
+   font-size: 18px;
+}
+
+.form input:focus{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.form a{
+    margin-top: 20px;
+    margin-left: 100px;
+    display: block;
+}
+
+.form button{
+    margin-top: 35px;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 350px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.titulo-cadastro{
+    margin-top: 50px;
+}
+
+
+
+.form-cadastro input{
+    outline: none;
+    display: block;
+    width: 350px;
+    height: 40px;
+   border-radius: 0px;
+   background-color: rgba(165, 164, 164, 0.322);
+   border: none;
+   font-size: 18px;
+}
+
+.form-cadastro input:focus{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.form-cadastro label{
+    font-size: 20px;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.form-cadastro button{
+    margin-top: 35px;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 350px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.form-cadastro a{
+    margin-top: 20px;
+    margin-left: 100px;
+    display: block;
+   
+}
