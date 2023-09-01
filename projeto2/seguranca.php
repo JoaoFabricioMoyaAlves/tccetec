@@ -3,7 +3,7 @@
 ob_start();
 session_start();
 //VERIFICACAO PARA VER SE O USUARIO ESTÁ LOGADO
-if(($_SESSION['email_usuario']== "") || ($_SESSION['senha_usuario']== "")){
+if(($_SESSION['email']== "") || ($_SESSION['senha']== "")){
     header("Location:index.html");
 }
 ?>

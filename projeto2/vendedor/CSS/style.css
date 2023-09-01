@@ -972,6 +972,10 @@ padding-top: 10px;
    
 }
 
+.carrinho-rodape2 a{
+    margin: auto;
+}
+
 .carrinho-rodape2 button{
     height: 75px;
     width: 600px;
@@ -1057,7 +1061,7 @@ padding-top: 10px;
     margin-left: 160px;
     
 }
-.btnprodutoadd:hover{
+.btnprodutoadd :hover{
   background-color: rgb(53, 252, 27);
   color: rgb(66, 66, 66);
   font-size: 25px;

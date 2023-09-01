@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 23-Ago-2023 às 16:45
+-- Generation Time: 28-Ago-2023 às 18:41
 -- Versão do servidor: 5.6.25
 -- PHP Version: 5.5.27
 
@@ -46,6 +46,7 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `nomeC` varchar(255) NOT NULL,
   `emailC` varchar(255) NOT NULL,
   `senhaC` varchar(255) NOT NULL,
+  `telefoneC` int(10) NOT NULL,
   `cidadeC` varchar(70) NOT NULL,
   `bairroC` varchar(70) NOT NULL,
   `enderecoC` varchar(70) NOT NULL,
