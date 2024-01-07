@@ -1,0 +1,1047 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+
+
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Poppins', sans-serif;  
+}
+
+body{
+    background-color: rgb(250, 250, 250);
+    height: 900vh;
+}
+
+nav.menu-lateral{
+    margin-left: 0;
+     width: 0px;
+     height: 100%;
+     background-color: transparent;
+     padding: 107px 0px 40px 1%;
+     
+     overflow: hidden;
+     transition: .5s;
+     
+
+     position: fixed;
+     top: 0;
+     left: 0;
+
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+    background-color: rgba(33, 34, 34, 0.856);
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 15px;
+}
+
+.btn-expandir > i{
+    position:fixed;
+    top: 5%;
+    left: 4%;
+    color: white;
+    font-size: 38px;
+    
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color:rgb(26, 119, 241);
+}
+
+ul li.item-menu:hover{
+    background: rgb(26, 119, 241);
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 20px;
+    
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+
+
+nav.menu-lateral2{
+     width: 2px;
+     height: 100%;
+     background-color: rgba(33, 34, 34, 0.856);
+     padding: 40px 0px 80px 0%;
+     
+     overflow: hidden;
+     transition: .5s;
+     margin-right: 6%;
+     margin-left: 100%;
+     
+
+     position: fixed;
+     top: 0;
+     left: 0;
+
+}
+
+nav.menu-lateral2 #btn-exp3{
+    position: absolute;
+    display: block;
+    margin-left: 500Px;
+}
+nav.menu-lateral2 #mover{
+    position: absolute;
+    display: block;
+    margin-left: 500Px;
+}
+nav.menu-lateral2 #mover-txt{
+    position: absolute;
+    display: block;
+    margin-left: 500Px;
+}
+
+nav.menu-lateral2.expandir2{
+    width: 250px;
+    margin-right: 18%;
+    margin-left: 82%;
+    overflow: hidden;
+    display: block;
+}
+nav.menu-lateral2.expandir2 #btn-exp2{
+    position: absolute;
+    display: flex;
+    margin-left: 500Px;
+}
+
+nav.menu-lateral2.expandir2 #btn-exp3{
+    position: relative;
+    display: contents;
+    padding-left: 15px;
+    font-size: 30px;
+    
+}
+
+nav.menu-lateral2.expandir2 #mover{
+    position: relative;
+    display: block;
+    margin: 35px 5px 5px 45px;
+    
+}
+
+nav.menu-lateral2.expandir2 #mover-txt{
+    position: relative;
+    display: block;
+    margin: 13px 5px 5px 75px;
+    
+}
+
+
+
+.btn-expandir2{
+    width: 100%;
+    padding-left: 15px;
+}
+
+
+.btn-expandir2 > i{
+    position: fixed;
+    top: 5%;
+    left: 94%;
+    color: white;
+    font-size: 38px;
+}
+
+.btn-expandir3 > i{
+    color: white;
+    font-size: 38px;
+}
+
+
+
+ul li.item-menu2{
+    transition: .2s;
+    
+}
+
+
+
+ul li.item-menu2:hover{
+    background: rgb(26, 119, 241);
+}
+
+.usuario{
+    height: 80%;
+    display: block;
+    
+}
+
+.usuario > i{
+    color: white;
+    font-size: 120px;
+    display: block;
+    top: 3%;
+    left: 5%;
+   
+}
+
+.usuario .txt-cliente{
+    display: block;
+    color: white;
+    font-size: 22px;
+    left: 6%;
+    top: 2%;
+}
+.usuario .txt-cliente2{
+    display: block;
+    color: rgb(207, 206, 206);
+    font-size: 22px;
+    left: 5%;
+    top: 1%;
+}
+
+ul li.item-menu2 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+    
+}
+
+ul li.item-menu2 a .txt-link2{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral2.expandir2 .txt-link2{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu2 a .icon2 > i{
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.img-desktop:hover{
+    box-shadow: 0px 50px 10px rgba(0, 0, 0, 0.288);
+}
+
+
+
+section.slider{
+    margin: 0 auto;
+    width: 87.5%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.774);
+}
+
+
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+    padding-top: 8.7%;
+    padding-bottom: 0;
+    
+}
+
+.slider-content input{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: static;
+    text-align: center;
+    
+
+}
+
+
+
+.slide-box img{
+    width: 100%;
+    height: 300px;
+    transition: .3s;
+    
+}
+
+
+
+.nav-manual{
+    position: relative;
+    width: 100%;
+    margin-top: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn{
+    border: 1px solid rgb(6, 7, 8);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    transition: .5s;
+}
+
+.nav-manual .manual-btn:not(:last-child){
+     margin-right: 10px;
+     background-color: rgb(31, 112, 187);
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio1:checked ~ .nav-auto .auto-btn2, #radio1:checked ~ .nav-auto .auto-btn1 {
+    background-color: black;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+    transition: 1s;
+
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+    transition: 1s;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+    transition: 1s;
+}
+
+.space-baixopromo{
+    width: auto;
+    height: 50px;
+    
+    overflow: hidden;
+}
+
+.search-box{
+    position: fixed;
+    top: 8%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background: rgba(88, 86, 86, 0.87) ;
+    height: 50px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 10px;
+    width: 300px;
+}
+
+.search-btn > i{
+    width: 40px;
+    height: 40px;
+    color: rgb(255, 254, 254);
+    padding-right: 10px;
+   
+}
+
+.carrinho{
+    position: fixed;
+    top: 5%;
+    left: 87%; 
+}
+
+.carrinho i{
+     color: white;
+     font-size: 38px;
+}
+
+.space-top{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(5, 5, 5, 0.904);
+    position: absolute;
+}
+
+.menu-top{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+    font-family: 'Poppins', sans-serif;  
+}
+
+main{
+    background-color: rgb(7, 7, 7);
+}
+
+.produtos-geral{
+   
+    display: flex;
+    justify-content: center;
+    
+}
+
+.produtos-geral a{
+    padding: none;
+    margin: none;
+    width: 300;
+    height: 300;
+    border-radius: none;
+   
+}
+
+.produto{
+    padding-left: 15px;
+    border: 2px solid rgb(133, 132, 132);
+    border-radius: 20px;
+    margin-top: 40px;
+    width: 300px;
+    height: 390px;
+    background: rgb(250, 250, 250);
+    position: static;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: .6s;
+}
+
+.produto:hover{
+  background: rgb(185, 185, 185);
+  
+    
+}
+
+.produto p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+    color: black;
+}
+
+
+.produto p.valor{
+   font-size: 20px;
+   color:rgb(133, 132, 132) ;
+   text-align: center;
+   margin-bottom: 10px;
+   margin-top: 5px;
+}
+
+.produto img{
+    align-content: center;
+    position: static;
+    width:280px;
+    height: 250px;
+   
+   padding-top: 10px;
+   border-radius: 10%;
+}
+
+.formulario-ender{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    background-color: rgb(255 255 255);
+    font-family: 'Poppins', sans-serif;  
+    padding-bottom: 100px;
+    
+}
+
+.form-endereco{
+   display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+} 
+
+.form-endereco div input{
+    outline: none;
+}
+
+
+.form-endereco div input:hover{
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+
+ 
+.form-space{
+    height: 100px;
+}
+
+
+    
+.form-nome{
+    padding-top: 20px;
+    display: block;
+    margin-left: 60px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+   
+}
+.form-nome input{
+     margin-left: 50px;
+     height: 25px;
+     width: 200px;
+     
+}
+
+.form-pais{
+    padding-top: 20px;
+    display: block;
+    margin-left: 120px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.form-pais input{
+    display: block;
+    margin-left: -10px;
+    height: 25px;
+    width: 200px;
+   
+}
+.form-cidade{
+    padding-top: 20px;
+    display: block;
+    margin-left: 120px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.form-cidade input{
+    display: block;
+    margin-left: -10px;
+    height: 25px;
+    width: 200px;
+    
+}
+.form-bairro{
+    padding-top: 20px;
+    display: block;
+    margin-left: 120px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.form-bairro input{
+    display: block;
+    margin-left: -10px;
+    height: 25px;
+    width: 200px;
+    
+}
+.form-cpf{
+    padding-top: 20px;
+    display: block;
+    margin-left: 120px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.form-cpf input{
+    display: block;
+    margin-left: -10px;
+    height: 25px;
+    width: 200px;
+   
+}
+
+.form-uf{
+    padding-top: 20px;
+    display: block;
+    margin-left: 120px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.form-uf input{
+    display: block;
+    margin-left: -10px;
+    height: 25px;
+    width: 200px;
+    
+}
+.form-cep{
+    padding-top: 20px;
+    display: block;
+    margin-left: 120px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.form-cep input{
+    display: block;
+    margin-left: -10px;
+    height: 25px;
+    width: 200px;
+   
+}
+
+.form-rua{
+    padding-top: 20px;
+    display: block;
+    margin-left: 120px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.form-rua input{
+    display: block;
+    margin-left: -10px;
+    height: 25px;
+    width: 200px;
+    
+}
+
+.form-n{
+    padding-top: 43px;
+    display: block;
+    margin-left: 120px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.form-n input{
+    display: block;
+    margin-left: -10px;
+    height: 25px;
+    width: 90px;
+    
+}
+
+.form-button{
+    margin-top: 30px;
+    margin-left: 120px;
+    height: 50px;
+    width: 220px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;  
+    font-size: 20px;
+}
+
+.form-button:hover{
+    background: linear-gradient(rgb(114, 253, 22),rgb(45, 134, 252));
+    color: white;
+    border: 1px solid white;
+}
+
+
+
+.support-back{
+    padding-left: 100px;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.support-back h1{
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.support-back h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.support-back h3{
+    padding: 10px;
+    font-size: 25px;
+}
+
+.support-back h4{
+    font-size: 20px;
+}
+
+.sup-division{
+  display: flex;
+}
+.robo-sup{
+    color: white;
+    font-size: 300px;
+    padding-left: 200px;
+}
+
+.button-produto{
+    background-color: transparent;
+    border: none;
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 255, 0.541);
+}
+
+.pag-produto{
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.pag-produto img{
+    width: 500px;
+    height: 500px;
+}
+
+
+.lyt-produto .nome-produto{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+.lyt-produto .valor-produto{
+    color: rgb(32, 248, 25);
+    font-size: 50px;
+}
+
+
+select {
+    border-radius: 10%;
+    margin-top: 30px;
+    display: block;
+   font-size: 35px;
+}
+
+.lyt-produto button{
+
+    width: 250px;
+    height: 60px;
+    font-size: 23px;
+    border-radius: 15px;
+    transition: .7s;
+    margin-top:160px;
+    margin-left: 45px;
+    
+}
+
+
+
+.lyt-produto button:hover{
+  background-color: rgb(53, 252, 27);
+  color: white;
+  font-size: 25px;
+  
+}
+
+.descricaoT {
+    margin-left: 40px;
+    font-size: 45px;
+}
+
+.descricao p{
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    color: #000000;
+    width: 1100px;
+    height: auto;
+    font-size: 25px;
+   
+}
+
+.barralat{
+    width: 4px; 
+  background-color: #007bff; 
+  margin-right: 10px;
+}
+
+.car-space{
+    height: none;
+}
+
+
+.btnvoltar{
+    position: absolute;
+    font-size: 25px;
+    left: 25px;
+    top: 25px;
+}
+
+
+.carrinho-ender{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(51, 51, 51);
+    font-family: 'Poppins', sans-serif;  
+}
+.space-produto-carrinho{
+
+    height: 20px;
+}
+.produto-carrinho{
+     padding-top: 15px;
+     padding-left: 10px;
+    height: 120px;
+    background-color: rgba(24, 24, 24, 0.856);
+    display: flex;
+}
+
+.produto-carrinho img{
+    height: 90px;
+    width: 110px;
+    padding-left: 10px;
+}
+
+.prdotuo-carrinho-nome-valor{
+    padding-left: 25px;
+    max-width: 600px;
+    min-width: 600px;
+}
+
+.prdotuo-carrinho-nome-valor h2{
+    color: rgba(224, 224, 224, 0.925);
+}
+
+.prdotuo-carrinho-nome-valor p{
+    color: rgb(156, 240, 31);
+}
+
+.excluir-produto{
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    margin-top: 15px;
+    margin-left: 400px;
+    color: rgb(189, 12, 12);
+}
+
+
+.produto-carrinho button{
+    text-align: center;
+    font-size: 50px;
+    margin-left: 65%;
+    margin-top: 15px;
+    height: 50px;
+    width: 50px;
+    color: red;
+    background-color: transparent;
+    border: none;
+}
+
+.carrinho-rodape{
+    width: 100%;
+    height: 170px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.63);
+    top: 86%;
+    position: fixed;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-left: 5%;
+}
+
+.car-endereco{
+font-style: none;
+padding-top: 5px;
+overflow: hidden;
+font-size: 16px;
+}
+
+.car-endereco p{
+  color: aliceblue;
+    }
+
+.valor-frete{
+padding-left: 60%;
+padding-top: 10px;
+
+}
+
+.valor-frete h2{
+    color: rgb(156, 240, 31);
+}
+
+.valor-frete p{
+    color: rgba(255, 255, 255, 0.904);
+}
+
+.valor-frete > .p2{
+    color: rgb(240, 31, 240);
+}
+
+.carrinho-rodape button{
+ height: 75px;
+ width: 350px;
+ margin-top: 20px;
+ border-radius: 35px;
+ font-size: 30px;
+ transition:  1.5s;
+}
+
+.carrinho-rodape button:hover{
+   background-color:  rgb(156, 240, 31);
+    border-radius: 20px;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.801);
+
+   }
+
+.rapart-pagamento{
+    display: flex;
+}
+
+.pagamentoqr{
+    width: 600px;
+    color: white;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
+.pagamentoqr p{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pagamentoqr img{
+  width: 350px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.pagamentopp{
+    color: white;
+    font-size: 18px;
+    margin-left: 150px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pagamentop1 p{
+   color: rgba(238, 20, 238, 0.993);
+   font-size: 22px;
+}
+
+.pagamentop1 h3{
+    color: rgba(66, 226, 26, 0.89);
+    font-size: 45px;
+}
+
+.pagamentop2{
+    margin-top: 90px;
+}
+
+.formulario-enderinfo{
+    margin: auto;
+    margin-top: 50px;
+    width: 900px;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;  
+    box-shadow: 5px 5px 5px rgb(107, 107, 107);
+}
+
+.necliente h2{
+    
+    margin-top: 80px;
+
+}
+.necliente h3{
+    
+    color: #6b6b6b;
+
+}
+
+.btnimgc{
+    margin-top: 200px;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid black;
+    transition: 1s;
+}
+
+.btnimgc:hover{
+  box-shadow: 3px 3px 5px black;
+}
+
+
+.btn-exit button{
+    width: 120px;
+    height: 40px;
+  
+    transition: 1s;
+    background-color: white;
+}
+.btn-exit button:hover{
+  box-shadow: 3px 3px 5px black;
+}
+
+
+.correio h2{
+   margin-left: 300px;
+   margin-top: 60px;
+   padding-bottom: 30px;
+}
+
+.correio a{
+   
+    margin-left: 450px;
+    color: #007bff;
+ }
+
+ .bt-endereco{
+    margin-top: 40px;
+    margin-left: 110px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    transition: 1s;
+    font-size: 20px;
+    font-family: Poppins;
+ }
+ .bt-endereco:hover{
+   box-shadow: 3px 3px 5px black;
+ }
