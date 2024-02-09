@@ -134,9 +134,9 @@ nav.menu-lateral2 #mover-txt{
 }
 
 nav.menu-lateral2.expandir2{
-    width: 250px;
+    width: 300px;
     margin-right: 18%;
-    margin-left: 82%;
+    margin-left: 83%;
     overflow: hidden;
     display: block;
 }
@@ -203,7 +203,7 @@ ul li.item-menu2:hover{
 }
 
 .usuario{
-    height: 80%;
+    height: 73%;
     display: block;
     
 }
@@ -977,6 +977,7 @@ transition: 1s;
 }
 
 .quantp{
+    width: 20px;
     margin-left: 10px;
     color: rgba(71, 70, 70, 0.829);
 }
@@ -988,7 +989,7 @@ transition: 1s;
     
 }
 .notifc .datap{
-    margin-left: 500px;
+    margin-left: 480px;
     margin-top: auto;
 }
 

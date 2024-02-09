@@ -9,9 +9,10 @@
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     $bd = mysqli_select_db($conn, "ecommerce");
-
+    date_default_timezone_set('America/Sao_Paulo');
        $data = date('y/m/d');
-      $hora = date('h:i:s');
+       
+      $hora = date("h:i:s");
      $idP = $_GET['idP'];
      $idC = $_GET['idC'];
      $valorP = $_GET['valorP'];

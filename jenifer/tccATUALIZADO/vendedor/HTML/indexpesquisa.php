@@ -56,7 +56,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce</title>
+    <title>Harmony Store</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../CSS/style.css">
    <script src="../JS/script.JS" defer></script> 
@@ -84,7 +84,7 @@
      </li>
      <li class="item-menu">
      <a href="msg.php">
-            <span class="icon"><i class="bi bi-basket2-fill"></i></span>
+            <span class="icon"><i class="bi bi-envelope-fill"></i></span>
             <span class="txt-link">Mensagens</span>
         </a>
      </li>
@@ -100,7 +100,7 @@
     </div>
     <div class="usuario">
         <i class="bi bi-person-circle" id="mover" style="margin-left:60px;"></i>
-        <span class="txt-cliente" id="mover-txt">Vendedor</span>
+        <span class="txt-cliente" id="mover-txt">Harmony Store</span>
         <span class="txt-cliente2" id="mover-txt">3800-9292</span>
     </div>
     <ul>
@@ -127,7 +127,11 @@
        </div>
        <form action="indexpesquisa.php"class="search-box" method="post">
     <input type="search" name="search-txt" id="search" placeholder="Pesquisar" class="search-txt">
-    <button class="search-btn" type="submit"><i class="bi bi-search"></i></button>
+    <button class="search-btn" type="submit" style="
+    background-color: transparent;
+    border:none;
+    font-size:22px;
+    "><i class="bi bi-search"></i></button>
         
  
     </form>
@@ -211,8 +215,8 @@ if(isset($resultadop))
                                          ?>
  
     <h3><?php echo "$nomeC" ?></h3>
-    <p class="nomep"><?php echo "$nomeP" ?></p>
-    <p class="quantp">2x</p>
+    <p class="nomep"><?php echo "$nomeP" ?>...</p>
+    <p class="quantp">Valor:R$<?php echo "$valorP" ?></p>
     <h4 class="datap"><?php echo "$dataV" ?></h4>
     <h4><?php echo "$horaV" ?></h4>
     <a href="<?php echo "exnotifc.php?idV=$idV"; ?> " name="caraio" style="

@@ -16,20 +16,6 @@
     
 
 
-    $sql = "SELECT * from contato ";
-
- 
-
-
-$resultadoc = mysqli_query($conn, $sql);
-
-    $ctcod = "";
-    $ctnome = "";
-    $ctemail = "";
-    $cttelefone = "";
-    $ctmsg = "";
-    $idC = "";
-
    
 
     
@@ -47,7 +33,7 @@ $resultadoc = mysqli_query($conn, $sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce</title>
+    <title>Harmony Store</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../CSS/style.css">
    <script src="../JS/script.JS" defer></script> 
@@ -77,7 +63,7 @@ $resultadoc = mysqli_query($conn, $sql);
      </li>
      <li class="item-menu">
      <a href="msg.php">
-            <span class="icon"><i class="bi bi-basket2-fill"></i></span>
+            <span class="icon"><i class="bi bi-envelope-fill"></i></span>
             <span class="txt-link">Mensagens</span>
         </a>
      </li>
@@ -93,7 +79,7 @@ $resultadoc = mysqli_query($conn, $sql);
     </div>
     <div class="usuario">
         <i class="bi bi-person-circle" id="mover" style="margin-left:60px;" ></i>
-        <span class="txt-cliente" id="mover-txt">Vendedor</span>
+        <span class="txt-cliente" id="mover-txt">Harmony Store</span>
         <span class="txt-cliente2" id="mover-txt">3800-9292</span>
     </div>
     <ul>
@@ -122,7 +108,11 @@ $resultadoc = mysqli_query($conn, $sql);
  
        <form action="msgpsq.php"class="search-box" method="post">
     <input type="search" name="search-txt" id="search" placeholder="Pesquisar" class="search-txt">
-    <button class="search-btn" type="submit"><i class="bi bi-search"></i></button>
+    <button class="search-btn" type="submit" style="
+    background-color: transparent;
+    border:none;
+    font-size:22px;
+    "><i class="bi bi-search"></i></button>
         
  
     </form>
@@ -146,6 +136,54 @@ margin-bottom:30px;
 "></div>
 
 <?php
+
+$sqlc2 = "SELECT * from clientes where nomeC like '$psq%' ";
+
+
+$resultadoc2 = mysqli_query($conn, $sqlc2);
+  
+$nomeC = "";
+$imgC = "";
+$emailC = "";
+$telefoneC = "";
+$idC = "";
+
+
+    
+
+    
+while ($linha = mysqli_fetch_array($resultadoc2)) {
+              
+    $nomeC = $linha['nomeC'];
+    $imgC = $linha['imgC'];
+    $emailC = $linha['emailC'];
+    $telefoneC = $linha['telefoneC'];
+    $idC = $linha['idC'];
+}
+
+if($idC == null){
+    echo"<h1 style='font-size:62px;color:#d3d3d3;'>Nenhum Comentário Encontrado :( </h1>";
+      exit();  
+  }else{
+
+$sql = "SELECT * from contato where idc = '$idC' ";
+
+
+
+
+$resultadoc = mysqli_query($conn, $sql);
+
+    $ctcod = "";
+    $ctnome = "";
+    $ctemail = "";
+    $cttelefone = "";
+    $ctmsg = "";
+    $idC = "";
+    
+
+   
+
+
     while ($linha = mysqli_fetch_array($resultadoc)) {
             
         $ctcod = $linha['CTcod'];
@@ -155,26 +193,11 @@ margin-bottom:30px;
       $ctmsg = $linha['mensagemCT'];
       $idC = $linha['idC'];
     
-      $sqlc2 = "SELECT * from clientes where nomeC like '$psq%' ";
+      
      
   
-      $resultadoc2 = mysqli_query($conn, $sqlc2);
-  
-      $nomeC = "";
-      $imgC = "";
-      $emailC = "";
-      $telefoneC = "";
-      $imgC = "";
      
-      if ($linha = mysqli_fetch_array($resultadoc2)) {
-              
-          $nomeC = $linha['nomeC'];
-          $imgC = $linha['imgC'];
-          $emailC = $linha['emailC'];
-          $telefoneC = $linha['telefoneC'];
-          $imgC = $linha['imgC'];
-      }
-     
+      
 
 
 
@@ -222,7 +245,9 @@ margin-bottom:30px;
 
 
         <?php
+       
         }
+    }
     }else{
         header("Location:msg.php");
     }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-commerce</title>
+  <title>Harmony Store</title>
 
   <!--
     - favicon
@@ -48,7 +48,50 @@
                                                  }  
                                     ?>
 
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  .container-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+          
+  }  
+  #carousel {
+    height: 300px;
+    width: 1200px;
+    overflow: hidden; 
+    font-family: roboto ;
+    font-weight: bold;
+    padding-bottom:40px;
+                border-bottom:1px solid var(--cultured);
+  }
+  #carousel ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    transition: transform 0.5s ease;
+  }
 
+  #carousel ul li {
+    flex: 0 0 25%;
+  }
+
+  #prev, #next {
+    display: inline-block;
+    padding: 10px;
+    background-color:#000000 ;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 10px;
+    
+  }
+  .items-carrousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+</style>
 </head>
 
 <body>
@@ -205,7 +248,96 @@
     </div>
 
     <br>
-
+    <div class="container-main" style="margin-left:260px;margin-top:40px;">
+       
+       <div id="carousel" >
+               <ul style="
+               
+               width:800px;
+               ">
+               <li>
+                        <div>
+                        <a <?php echo "href='carmulher.php?categoria=Acessorios'"; ?> style="color:black">
+                            <figure>
+                                <img src="categoria/fem/acessorio.png" alt="my img" style="width:100%"/>
+                                <figcaption style="text-align: center;"> Acessorios </figcaption>
+                              </figure>
+                                        </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                        <a <?php echo "href='carmulher.php?categoria=Camisa'"; ?> style="color:black">
+                            <figure>
+                                <img src="categoria/fem/blusa.png" alt="my img" style="width:100%"/>
+                                <figcaption style="text-align: center;"> Blusas </figcaption>
+                              </figure>
+                                        </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                        <a <?php echo "href='carmulher.php?categoria=calça'"; ?> style="color:black">
+                            <figure>
+                                <img src="categoria/fem/calça.png" alt="my img" style="width:100%"/>
+                                <figcaption style="text-align: center;"> Calça </figcaption>
+                              </figure>
+                                        </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                        <a <?php echo "href='carmulher.php?categoria=Moletom'"; ?> style="color:black">
+                            <figure>
+                                <img src="categoria/fem/moletom.png" alt="my img" style="width:100%"/>
+                                <figcaption style="text-align: center;"> Moletom </figcaption>
+                              </figure>
+                                        </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                        <a <?php echo "href='carmulher.php?categoria=Saia'"; ?> style="color:black">
+                            <figure>
+                                <img src="categoria/fem/saia.png" alt="my img" style="width:100%"/>
+                                <figcaption style="text-align: center;"> Saia </figcaption>
+                              </figure>
+                                        </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                        <a <?php echo "href='carmulher.php?categoria=Vestido'"; ?> style="color:black">
+                            <figure>
+                                <img src= "categoria/fem/vestido.png" alt="my img" style="width:100%"/>
+                                <figcaption style="text-align: center;"> Vestido </figcaption>
+                              </figure>
+                                        </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                      <div>
+                      <a <?php echo "href='carmulher.php?categoria=Short'"; ?> style="color:black">
+                          <figure>
+                              <img src= "categoria/fem/short.png" alt="my img" style="width:100%"/>
+                              <figcaption style="text-align: center;"> Short </figcaption>
+                            </figure>
+                                        </a>
+                      </div>
+                      
+                  </li>
+                    
+                    </li><!-- Adicione mais imagens conforme necessário -->
+               </ul>
+       </div>
+    
+   </div>
 
 
    
@@ -236,7 +368,7 @@
                                 <?php echo $linha['categoria_produto']; ?> 
                                 </div>
 
-                                <div class="descricao-product">
+                                <div class="descricao-product" style="max-width:220px;overflow:hidden;max: height 35px;">
                                 <?php echo $linha['nome_produto']; ?> 
                                 </div>
                                   <div class="avaliacao-product">

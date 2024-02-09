@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  .container-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+          
+  }  
+  #carousel {
+    height: 300px;
+    width: 800px;
+    overflow: hidden; 
+    font-family: roboto ;
+    font-weight: bold
+  }
+  #carousel ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  #carousel ul li {
+    flex: 0 0 25%;
+  }
+
+  #prev, #next {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    margin: 0 10px;
+    
+  }
+  .items-carrousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+</style>
+</head>
+<body>
+
+    <div class="container-main">
+        <div id="prev">
+            <
+        </div>
+        <div id="carousel">
+                <ul>
+                    <li>
+                        <div>
+                            <figure>
+                                <img src="conjunto.png" alt="my img" style="width:100%"/>
+                                <figcaption style="text-align: center;"> conjunto </figcaption>
+                              </figure>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                            <figure>
+                                <img src="blusa.png" alt="my img" style="width:100%"/>
+                                <figcaption style="text-align: center;"> Blusas </figcaption>
+                              </figure>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                            <figure>
+                                <img src="calça.png" alt="my img" style="width:100%"/>
+                                <figcaption style="text-align: center;"> Calça </figcaption>
+                              </figure>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                            <figure>
+                                <img src="calçado.png" alt="my img" style="width:100%"/>
+                                <figcaption style="text-align: center;"> Calçado </figcaption>
+                              </figure>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                            <figure>
+                                <img src="moletom.png" alt="my img" style="width:100%"/>
+                                <figcaption style="text-align: center;"> Moletom </figcaption>
+                              </figure>
+                        </div>
+                        
+                    </li>
+                  
+                    <li>
+                      <div>
+                          <figure>
+                              <img src= "short.png" alt="my img" style="width:100%"/>
+                              <figcaption style="text-align: center;"> Short </figcaption>
+                            </figure>
+                      </div>
+                      
+                  </li>
+
+                  <li>
+                    <div>
+                        <figure>
+                            <img src= "conjunto.png" alt="my img" style="width:100%"/>
+                            <figcaption style="text-align: center;"> Conjunto </figcaption>
+                          </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                  <div>
+                      <figure>
+                          <img src= "macaquinho.png" alt="my img" style="width:100%"/>
+                          <figcaption style="text-align: center;"> Macaquinho </figcaption>
+                        </figure>
+                  </div>
+                  
+              </li>
+
+
+
+                    
+                    </li><!-- Adicione mais imagens conforme necessário -->
+                </ul>
+        </div>
+        <div id="next">
+            >
+        </div> 
+    </div>
+<script>
+  var carousel = document.getElementById('carousel');
+  var ul = carousel.querySelector('ul');
+  var liItems = carousel.querySelectorAll('li');
+  var prev = document.getElementById('prev');
+  var next = document.getElementById('next');
+  var currentIndex = 0;
+  var itemWidth = carousel.offsetWidth / 4;
+  var totalItems = liItems.length;
+
+  prev.addEventListener('click', function() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      ul.style.transform = 'translateX(' + (-itemWidth * currentIndex) + 'px)';
+    }
+  });
+
+  next.addEventListener('click', function() {
+    if (currentIndex < totalItems - 4) {
+      currentIndex++;
+      ul.style.transform = 'translateX(' + (-itemWidth * currentIndex) + 'px)';
+    }
+  });
+</script>
+
+</body>
+</html>

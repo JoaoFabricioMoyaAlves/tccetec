@@ -274,7 +274,7 @@
                                                                 <?php echo $linha['categoria_produto']; ?> 
                                                                 </div>
 
-                                                                <div class="descricao-product">
+                                                                <div class="descricao-product" style="max-width:220px;overflow:hidden;max: height 35px;">
                                                                 <?php echo $linha['nome_produto']; ?> 
                                                                 </div>
                                                                   <div class="avaliacao-product">

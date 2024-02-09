@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce</title>
+    <title>Harmony Store</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="cliente/CSS/style.css">
     <style>
@@ -13,6 +13,7 @@
         background-color: #C0C0C0;
     }
 </style>
+<link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon" width="500" height="00">
 </head>
 
 <body style="height:100%;">
@@ -62,12 +63,14 @@
     $valor = "";
     $descricao = "";
     $img = "";
+    $categoria = "";
 
     if ($linha = mysqli_fetch_array($resultado2)) {
         $nome = $linha['descricao_produto'];
         $valor = $linha['valor_produto'];
         $descricao = $linha['nome_produto'];
         $img = $linha['imagem_produto'];
+        $categoria = $linha['categoria_produto'];
 
         $valor_com_desconto = (1-($linha['porcentagem_desconto_produto']/100)) *  $linha['valor_produto'] ;
 
@@ -95,24 +98,43 @@
 
 
                 
-                 <select class="tamanhos" name="tamanhos" id="tamanhos" class="tambn">
-                    <option value="p">P</option>
-                    <option value="m">M</option>
-                    <option value="g">G</option>
-                    <option value="gg">GG</option>
-                </select>
-                <a <?php echo "href='cliente/HTML/addcarrinho.php?idp=$cod_produto&valor=$valor_com_desconto'"; ?> class="tambn" >  <button type="submit">Comprar</button></a>
+                 <div style="display:flex;margin-top:130px;">
+                 <?php
+                $sapato = array("Tenis","Sandália","Sapatilha","Calça","Short");
+                $nao_roupa = array("Boné","Cinto","Óculos","Relógio","Anel","Bolsa","Brinco","Colar","Pulseira");
+                if(in_array($categoria, $sapato)){
+                    echo " <select class='tamanhos' style='display:flex;height:50px;margin-top:165px;' name='tamanhos' id='tamanhos' class='tambn'>
+                        <option value='40'>40</option>
+                        <option value='41'>41</option>
+                        <option value='42'>42</option>
+                        <option value='43'>43</option>
+                        <option value='44'>44</option>
+                                     </select>";
+
+                }elseif(in_array($categoria, $nao_roupa)){
+                    echo " ";
+                       
+                }else{
+                   echo " <select class='tamanhos' style='display:flex;height:50px;margin-top:165px;' name='tamanhos' id='tamanhos' class='tambn'>
+                        <option value='p'>P</option>
+                        <option value='m'>M</option>
+                        <option value='g'>G</option>
+                        <option value='gg'>GG</option>
+                                     </select>";}
+                                     ?>
+                                     <a <?php echo "href='cliente/HTML/addcarrinho.php?idp=$cod_produto&valor=$valor_com_desconto'"; ?> class="tambn" >  <button type="submit">Comprar</button></a>
+                 </div>
             </div>
             
         </div>
         <h2 class="descricaoT">Descrição:</h2>
-        <div class="descricao">
+        <div class="descricao"  >
 
-                    <p><?php echo "$nome" ?>
-                    </p>
+                    <?php echo "<p>$nome</p>" ?>
+                  
+                    
 
                 </div>
     </div>
-
 
 </body>

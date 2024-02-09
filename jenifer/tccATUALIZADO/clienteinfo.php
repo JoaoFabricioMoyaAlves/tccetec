@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce</title>
+    <title>Harmony Store</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="cliente/CSS/style.css">
     <link rel="stylesheet" href="vendedor/CSS/style.css">
@@ -90,7 +90,7 @@ border-bottom:1px solid #c7c6c6;
          </div>
         <button type="submit" class="btnimgc" style="position: relative;">Carregar.</button>
     </form>
-    <div class="necliente">
+    <div class="necliente" style="min-width:200px;max-width:200px">
     
         <h2>Conta</h2>
         <h3><?php echo "$nomeC" ?></h3>

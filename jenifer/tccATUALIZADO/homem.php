@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-commerce</title>
+  <title>Harmony Store</title>
 
   <!--
     - favicon
@@ -53,6 +53,50 @@
                                                      
                                                  }  
                                     ?>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  .container-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+          
+  }  
+  #carousel {
+    height: 300px;
+    width: 1200px;
+    overflow: hidden; 
+    font-family: roboto ;
+    font-weight: bold;
+    padding-bottom:40px;
+                border-bottom:1px solid var(--cultured);
+  }
+  #carousel ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  #carousel ul li {
+    flex: 0 0 25%;
+  }
+
+  #prev, #next {
+    display: inline-block;
+    padding: 10px;
+    background-color:#000000 ;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 10px;
+    
+  }
+  .items-carrousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+</style>
 
 </head>
 
@@ -202,12 +246,95 @@
 
     <div class="banner" style="margin-left:80px;">
             <img src="./assets/images/baner.jpg" alt=" sale" class="banner-img">
-            <img src="./assets/images/banner_homem.jpg" alt="women's latest fashion sale" class="banner-img" style="padding-bottom:60px;border-bottom:1px solid var(--cultured)">
+            <img src="./assets/images/banner_homem.jpg" alt="women's latest fashion sale" class="banner-img" style="padding-bottom:60px;border-bottom:1px solid var(--cultured);">
 
             </div>
             <br>
    
    
+            <div class="container-main" style="margin-left:260px;margin-top:40px;">
+        
+        <div id="carousel" >
+                <ul style="
+                
+                width:800px;
+                ">
+                    <li>
+                        <div><?php 
+                        
+                        ?>
+                            <a <?php echo "href='carhomem.php?categoria=Acessorios'"; ?> style="color:black">
+                              <figure>
+                                  <img src="categoria/masc/acessorio.png" alt="my img" style="width:100%"/>
+                                  <figcaption style="text-align: center;"> Acessorios </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                            <a <?php echo "href='carhomem.php?categoria=camisa'"; ?> style="color:black">
+                              <figure>
+                                  <img src="categoria/masc/blusa.png" alt="my img" style="width:100%"/>
+                                  <figcaption style="text-align: center;"> Blusas </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                            <a <?php echo "href='carhomem.php?categoria=calça'"; ?> style="color:black">
+                              <figure>
+                                  <img src="categoria/masc/calça.png" alt="my img" style="width:100%"/>
+                                  <figcaption style="text-align: center;"> Calça </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                            <a <?php echo "href='carhomem.php?categoria=Tenis'"; ?> style="color:black">
+                              <figure>
+                                  <img src="categoria/masc/calcado.png" alt="my img" style="width:100%"/>
+                                  <figcaption style="text-align: center;"> Calçado </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                            <a <?php echo "href='carhomem.php?categoria=Moletom'"; ?> style="color:black">
+                              <figure>
+                                  <img src="categoria/masc/moletom.png" alt="my img" style="width:100%"/>
+                                  <figcaption style="text-align: center;"> Moletom </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        
+                    </li>
+                  
+                    <li>
+                      <div>
+                          <a <?php echo "href='carhomem.php?categoria=Short'"; ?> style="color:black">
+                            <figure>
+                                <img src= "categoria/masc/short.png" alt="my img" style="width:100%"/>
+                                <figcaption style="text-align: center;"> Short </figcaption>
+                              </figure>
+                          </a>
+                      </div>
+                      
+                  </li>
+                    
+                    </li><!-- Adicione mais imagens conforme necessário -->
+                </ul>
+        </div>
+      
+    </div>
+
 
     <section id="produtos_grid" style="padding-top:50px;padding-bottom:60px;width:1352px;margin:auto;">
     <?php
@@ -235,7 +362,7 @@
                                 <?php echo $linha['categoria_produto']; ?> 
                                 </div>
 
-                                <div class="descricao-product">
+                                <div class="descricao-product" style="max-width:220px;overflow:hidden;max: height 35px;">
                                 <?php echo $linha['nome_produto']; ?> 
                                 </div>
                                   <div class="avaliacao-product">

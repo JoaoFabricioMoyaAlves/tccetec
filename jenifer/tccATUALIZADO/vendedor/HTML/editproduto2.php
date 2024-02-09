@@ -46,7 +46,7 @@ if ($linha = mysqli_fetch_array($resultadop))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce</title>
+    <title>Harmony Store</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../CSS/style.css">
    <script src="../JS/script.JS" defer></script> 
@@ -80,7 +80,7 @@ if ($linha = mysqli_fetch_array($resultadop))
        </li>
        <li class="item-menu">
        <a href="msg.php">
-              <span class="icon"><i class="bi bi-basket2-fill"></i></span>
+              <span class="icon"><i class="bi bi-envelope-fill"></i></span>
               <span class="txt-link">Mensagens</span>
           </a>
        </li>
@@ -94,7 +94,7 @@ if ($linha = mysqli_fetch_array($resultadop))
       </div>
       <div class="usuario">
           <i class="bi bi-person-circle" id="mover" style="margin-left:60px;"></i>
-          <span class="txt-cliente" id="mover-txt">Vendedor</span>
+          <span class="txt-cliente" id="mover-txt">Harmony Store</span>
         <span class="txt-cliente2" id="mover-txt">3800-9292</span>
       </div>
       <ul>
