@@ -92,4 +92,4 @@ Este projeto foi essencial para aplicar na prática os conhecimentos adquiridos 
 
 **João Fabrício Moya Alves**  
 📧 joaofabriciomoyaalvesoficial@gmail.com  
-🌐 [GitHub](https://github.com/seu-usuario) | [LinkedIn](www.linkedin.com/in/joão-fabrício-moya-alves-44377529b)
+🌐 [GitHub](https://github.com/JoaoFabricioMoyaAlves) | [LinkedIn](www.linkedin.com/in/joão-fabrício-moya-alves-44377529b)
